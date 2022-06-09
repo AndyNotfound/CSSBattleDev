@@ -1,0 +1,56 @@
+<div class="flat stick ninetyDeg"></div>
+<div class="flat">
+  <div class="stick fiftyDeg"></div>
+  <div class="stick minFiftyDeg"></div>
+</div>
+<div class="flat">
+  <div class="stick twentyFiveDeg"></div>
+  <div class="stick minTwentyFiveDeg"></div>
+</div>
+<div class="flat"> 
+  <div class="stick"></div>
+  <div class="stick"></div>
+</div>
+<style>
+  .stick{
+    width: 110px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #F2E09F;
+  }
+  .flat{
+    display: flex;
+    gap: 40px;
+  }
+  .fiftyDeg{
+    transform: rotate(50deg);
+    transform-origin: 45% 400%;
+    margin-bottom: 30px;
+  }
+  .minFiftyDeg{
+    transform: rotate(-50deg);
+    transform-origin: 55% 400%;
+    margin-bottom: 30px;
+  }
+  .twentyFiveDeg{
+    transform: rotate(25deg);
+    transform-origin: 38% 210%;
+    margin-bottom: 30px;
+  }
+  .minTwentyFiveDeg{
+    transform: rotate(-25deg);
+    transform-origin: 62% 190%;
+    margin-bottom: 30px;
+  }
+  .ninetyDeg{
+   	transform: rotate(90deg);
+    margin: 0 auto -10px auto;
+  }
+  html{
+    background-color: #D25B70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+</style>
