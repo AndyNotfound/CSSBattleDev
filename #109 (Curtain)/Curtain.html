@@ -1,0 +1,53 @@
+<div class="ball-grid">
+    <div class="row-one"> 
+        <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+    </div>
+    <div class="row-two"> 
+        <div> </div>
+      <div> </div>
+      <div> </div>
+    </div>
+    <div class="row-three"> 
+        <div> </div>
+      <div> </div>
+    </div>
+    <div class="row-four"> 
+        <div> </div>
+    </div>
+  </div>
+  <style>
+    html{
+      background-color: #191919;
+    }
+    .ball-grid{
+      margin-top: 19.7px;
+      display: grid;
+      grid-template-columns: 40px 40px 40px 40px;
+    }
+    .ball-grid > div{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .ball-grid > div > div{
+      background-color: #F6E59C;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+    }
+    .row-one{
+      margin:0 0 0 13px;
+    }
+    .row-two{
+      margin: 0 0 0 33px;
+    }
+    .row-three{
+      margin: 0 0 0 52px;
+    }
+    .row-four{
+      margin: 0 0 0 73px;
+    }
+  </style>
