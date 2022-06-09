@@ -1,0 +1,52 @@
+<div class="wrapper">
+    <div class="tapeWrapper">
+        <div class="tapeOne"></div>
+        <div class="tapeTwo"></div>
+    </div>
+    <div class="box-grid">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  
+  <style>
+    html{
+      background-color: #AC474B;
+      display: flex;
+      justify-content: center;
+    }
+    .tapeWrapper{
+      width: 54px;
+      height: 40px;
+      position: relative;
+      margin: 42px auto 19.5px auto;
+      display: flex;
+    }
+    .tapeOne{
+      right: 42%;
+      border-radius: 100% 100% 0 100%;
+    }
+    .tapeTwo{
+      left: 42%;
+      border-radius: 100% 100% 100% 0;
+    }
+    .tapeOne, .tapeTwo{
+      position: absolute;
+      width: 19px;
+      height: 20px;
+      border: 10px solid #fff;
+    }
+    .box-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .box-grid > div{
+      margin: 1px;
+      width: 59px;
+      height: 59px;
+      background-color: #fff;
+    }
+  </style>
